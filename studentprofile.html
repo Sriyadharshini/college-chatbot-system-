@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b><label for="Student Name">Student Name:{{user.username}}</label>
+
+    <br>
+    <br>
+    <b><label for="Department">Department:{{user.Department}}</label>
+
+    <br>   <br>
+    <b><label for="YearofPassing">Year of Passing:{{user.year}}</label>
+  
+    <br>   <br>
+    <b><label for="email">Email:{{user.MailId}}</label>
+        
+    <br>   <br>
+
+
+    <script>
+
+        const paragraph = document.getElementById("edit");
+        const edit_button = document.getElementById("edit-button");
+        const end_button = document.getElementById("end-editing");
+        
+        edit_button.addEventListener("click", function() {
+          paragraph.contentEditable = true;
+          paragraph.style.backgroundColor = "white";
+        } );
+        
+        end_button.addEventListener("click", function() {
+          paragraph.contentEditable = false;
+          paragraph.style.backgroundColor = "white";
+        } )
+
+    </script>
+    
+   
+</body>
+</html>
